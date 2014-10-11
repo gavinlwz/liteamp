@@ -1,0 +1,695 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litemap 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-07 20:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Dongsu Jang <iolo@hellocity.net>\n"
+"Language-Team: ko <ko@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/about-dialog.c:19
+msgid "translator_credits"
+msgstr ""
+"장동수 <iolo@hellocity.net>\n"
+"장재만 <jacojang@korea.com>"
+
+#: src/about-dialog.c:32
+msgid "(C) 2002 Dongsu Jang"
+msgstr "(C) 2002 Dongsu Jang"
+
+#: src/about-dialog.c:33
+msgid "A Light-Weight Music Player for GNOME"
+msgstr "그놈을 위한 가벼운 음악 연주기"
+
+#: src/callbacks.c:36
+msgid "Choose a playlist to delete!"
+msgstr "지울 연주목록을 선택하십시오!"
+
+#: src/callbacks.c:43
+#, c-format
+msgid "Remove the playlist \"%s\"?"
+msgstr "연주목록 \"%s\"을(를) 삭제할까요?"
+
+#: src/callbacks.c:62
+msgid "Add Files"
+msgstr "파일 더하기"
+
+#: src/callbacks.c:105
+msgid "Add Directories"
+msgstr "디렉토리 더하기"
+
+#: src/callbacks.c:154
+msgid "Select .pls Files to Import..."
+msgstr ".pls 파일 들여오기..."
+
+#: src/callbacks.c:184
+#, c-format
+msgid "Export the playlist \"%s\" as..."
+msgstr "연주목록 \"%s\" 내보내기..."
+
+#: src/callbacks.c:189
+msgid "Export the library as..."
+msgstr "라이브러리 내보내기..."
+
+#: src/eggtrayicon.c:114
+msgid "Orientation"
+msgstr "방향"
+
+#: src/eggtrayicon.c:116
+msgid "The orientation of the tray."
+msgstr "트레이의 방향."
+
+#: src/la-track-column.c:44
+msgid "URI"
+msgstr "URI"
+
+#: src/la-track-column.c:45
+msgid "Title"
+msgstr "제목"
+
+#: src/la-track-column.c:46
+msgid "Genre"
+msgstr "장르"
+
+#: src/la-track-column.c:47
+msgid "Artist"
+msgstr "가수"
+
+#: src/la-track-column.c:48
+msgid "Album"
+msgstr "앨범"
+
+#: src/la-track-column.c:49
+msgid "Track"
+msgstr "트랙"
+
+#: src/la-track-column.c:50
+msgid "Year"
+msgstr "연도"
+
+#: src/la-track-column.c:51
+msgid "Comment"
+msgstr "설명"
+
+#: src/la-track-column.c:52
+msgid "Bitrate"
+msgstr "비트율"
+
+#: src/la-track-column.c:53
+msgid "Samplerate"
+msgstr "재생률"
+
+#: src/la-track-column.c:54
+msgid "Frames"
+msgstr "프레임"
+
+#: src/la-track-column.c:55
+msgid "Channels"
+msgstr "채널"
+
+#: src/la-track-column.c:56
+msgid "Seconds"
+msgstr "길이(초)"
+
+#: src/la-track-column.c:57
+msgid "Bytes"
+msgstr "길이(바이트)"
+
+#: src/la-track-column.c:58 src/la-track-column.c:60 src/la-track-column.c:68
+msgid " "
+msgstr " "
+
+#. icon
+#: src/la-track-column.c:59 src/la-track-column.c:65
+msgid "Rating"
+msgstr "선호도"
+
+#. checked
+#: src/la-track-column.c:61
+msgid "Timestamp"
+msgstr "갱신시각"
+
+#: src/la-track-column.c:62
+msgid "Time"
+msgstr "시간"
+
+#: src/la-track-column.c:63
+msgid "Size"
+msgstr "크기"
+
+#: src/la-track-column.c:64
+msgid "Date"
+msgstr "날짜"
+
+#: src/la-track-column.c:66
+msgid "Quality"
+msgstr "음질"
+
+#: src/la-track-column.c:67
+msgid "Summary"
+msgstr "요약"
+
+#: src/la-track.c:45
+#, c-format
+msgid "%.1fKBPS %.1fKHz %d / %d"
+msgstr "%.1fKBPS %.1fKHz %d / %d"
+
+#: src/la-track.c:47
+#, c-format
+msgid ""
+"Bit Rate:%d Bit/Sec\n"
+"Sample Rate:%d Hz\n"
+"Frames:%d\n"
+"Channels:%d"
+msgstr ""
+"비트율:%d 비트/초\n"
+"재생율:%d Hz\n"
+"프레임:%d\n"
+"채널n:%d"
+
+#: src/la-tracks-store.c:36
+#, c-format
+msgid "Titles: %d / %d, Play Time: %s / %s, File Size: %s / %s"
+msgstr "등록된 곡: %d / %d, 연주 시간: %s / %s, 파일 크기: %s / %s"
+
+#: src/liteamp.c:112
+msgid ""
+"<span size=\"x-large\">LiteAmp - </span><span size=\"large\">[STOPPED]</"
+"span>\n"
+"May the music be with you!"
+msgstr ""
+"<span size=\"x-large\">LiteAmp - </span><span size=\"large\">[멈춤]</span>\n"
+"May the music be with you!"
+
+#: src/liteamp.c:116
+#, c-format
+msgid ""
+"<span size=\"x-large\">%s</span><span size=\"large\"> [%s]</span>\n"
+"<span>From %s by %s</span>"
+msgstr ""
+"<span size=\"x-large\">%s</span><span size=\"large\"> [%s]</span>\n"
+"<span>앨범: %s 가수: %s</span>"
+
+#: src/liteamp.c:117
+msgid "Unknown Album"
+msgstr "어떤 앨범"
+
+#: src/liteamp.c:118
+msgid "Unknown Artist"
+msgstr "어떤 가수"
+
+#: src/liteamp.c:124
+#, c-format
+msgid ""
+"<span weight=\"bold\" size=\"xx-large\">LiteAmp - %s</span><span size=\"x-"
+"large\"> [%s]</span>"
+msgstr ""
+"<span weight=\"bold\" size=\"xx-large\">LiteAmp - %s</span><span size=\"x-"
+"large\"> [%s]</span>"
+
+#: src/main.c:14
+msgid "start to play track"
+msgstr "프로그램 시작하면서 연주 시작"
+
+#: src/main.c:17
+msgid "uri of playlist to load"
+msgstr "프로그램 시작하면서 불러올 연주목록 위치(URI)"
+
+#: src/main.c:17
+msgid "PLAYLIST"
+msgstr "연주목록"
+
+#: src/main.c:19
+msgid "uri of track to load"
+msgstr "프로그램 시작하면서 불러올 트랙 위치(URI)"
+
+#: src/main.c:19
+msgid "TRACK"
+msgstr "트랙"
+
+#: src/player.c:35
+msgid "PLAYING"
+msgstr "연주중"
+
+#: src/player.c:36
+msgid "PAUSED"
+msgstr "잠깐멈춤"
+
+#: src/player.c:37
+msgid "STOPPED"
+msgstr "멈춤"
+
+#. set default attributes for new item
+#: src/playlist-dialog.c:125
+#, c-format
+msgid "Playlist-%d"
+msgstr "연주목록-%d"
+
+#: src/prefs-dialog.c:490 src/prefs-dialog.c:506
+msgid "Column"
+msgstr "컬럼"
+
+#: src/prefs-dialog.c:524 src/prefs-dialog.c:544
+msgid "Codeset"
+msgstr "코드셋"
+
+#: src/sidebar.c:202
+msgid "Playlist"
+msgstr "연주목록"
+
+#: src/track-dialog.c:314
+#, c-format
+msgid "%s - %d Track(s)"
+msgstr "%s - %d 트랙"
+
+#: src/effect/effect.c:232
+msgid "Effect"
+msgstr "효과"
+
+#: src/effect/effect.c:261
+msgid "Enable Echo"
+msgstr "에코 사용"
+
+#: src/effect/effect.c:276
+msgid "Deley(ms)"
+msgstr "지연(ms)"
+
+#: src/effect/effect.c:295
+msgid "Feedback(%)"
+msgstr "피드백(%)"
+
+#: src/effect/effect.c:314
+msgid "Wet(%)"
+msgstr "습기(%)"
+
+#: src/effect/effect.c:328
+msgid "Echo"
+msgstr "에코"
+
+#: src/effect/effect.c:348
+msgid "Enable Stereo Enhance"
+msgstr "스테레오 강화 사용"
+
+#: src/effect/effect.c:363
+msgid "Effect Level"
+msgstr "효과 수준"
+
+#: src/effect/effect.c:376
+msgid "Stereo Enhance"
+msgstr "스테레오 강화"
+
+#: src/effect/effect.c:392
+msgid "Enable Voice Removal"
+msgstr "음성 제거 사용"
+
+#: src/effect/effect.c:402
+msgid "Voice Removal"
+msgstr "음성 제거"
+
+#: src/effect/effect.c:418
+msgid "Enable Normalizer"
+msgstr "정규화 사용"
+
+#: src/effect/effect.c:432
+msgid "Window Size"
+msgstr "윈도 크기"
+
+#: src/effect/effect.c:449
+msgid "Target Audio Level"
+msgstr "대상 오디오 수준"
+
+#: src/effect/effect.c:468
+msgid "Maximum Gain"
+msgstr "Maximum Gain"
+
+#: src/effect/effect.c:487
+msgid "Gain Smooth"
+msgstr "Gain Smooth"
+
+#: src/effect/effect.c:503
+msgid "Normalizer"
+msgstr "정규화"
+
+#: src/effect/effect.c:527
+msgid "Enable Equalizer"
+msgstr "이퀄라이져 사용"
+
+#: src/effect/effect.c:532
+msgid "Auto"
+msgstr "자동"
+
+#: src/effect/effect.c:543
+msgid "Flat"
+msgstr "평면"
+
+#: src/effect/effect.c:548
+msgid "Rock"
+msgstr "락"
+
+#: src/effect/effect.c:553
+msgid "Pop"
+msgstr "팝"
+
+#: src/effect/effect.c:558
+msgid "Laptop Speaker"
+msgstr "노트북 스피커"
+
+#: src/effect/effect.c:563
+msgid "Classic"
+msgstr "클래식"
+
+#: src/effect/effect.c:601
+msgid "30"
+msgstr "30"
+
+#: src/effect/effect.c:606
+msgid "62"
+msgstr "62"
+
+#: src/effect/effect.c:611
+msgid "125"
+msgstr "125"
+
+#: src/effect/effect.c:616
+msgid "250"
+msgstr "250"
+
+#: src/effect/effect.c:621
+msgid "500"
+msgstr "500"
+
+#: src/effect/effect.c:626
+msgid "1K"
+msgstr "1K"
+
+#: src/effect/effect.c:631
+msgid "2K"
+msgstr "2K"
+
+#: src/effect/effect.c:636
+msgid "4K"
+msgstr "4K"
+
+#: src/effect/effect.c:641
+msgid "6K"
+msgstr "6K"
+
+#: src/effect/effect.c:646
+msgid "16K"
+msgstr "16K"
+
+#: src/effect/effect.c:651
+msgid "Equalizer"
+msgstr "이퀄라이져"
+
+#: data/glade/liteamp-window.glade.h:1
+msgid ""
+"<span size=\"xx-large\">LiteAmp</span>\n"
+"May the music be with you!"
+msgstr ""
+"<span size=\"x-large\">LiteAmp</span>\n"
+"May the music be with you!"
+
+#: data/glade/liteamp-window.glade.h:3
+msgid "Add _Directory"
+msgstr "디렉토리 더하기(_D)"
+
+#: data/glade/liteamp-window.glade.h:4
+msgid "Add _File"
+msgstr "파일 더하기(F)"
+
+#: data/glade/liteamp-window.glade.h:5
+msgid "Add _Location"
+msgstr "위치 더하기(_L)"
+
+#: data/glade/liteamp-window.glade.h:6
+msgid "Configure E_ffects"
+msgstr "효과 설정(_F)"
+
+#: data/glade/liteamp-window.glade.h:7
+msgid "LiteAmp"
+msgstr "LiteAmp"
+
+#: data/glade/liteamp-window.glade.h:8
+msgid "P_ause"
+msgstr "잠깐 멈춤(_A)"
+
+#: data/glade/liteamp-window.glade.h:9
+msgid "S_huffle"
+msgstr "섞기(_H)"
+
+#: data/glade/liteamp-window.glade.h:10
+msgid "S_tatusbar"
+msgstr "상태 표시줄(_T)"
+
+#: data/glade/liteamp-window.glade.h:11
+msgid "S_top"
+msgstr "멈춤(_T)"
+
+#: data/glade/liteamp-window.glade.h:12
+msgid "Select _None"
+msgstr "모두 선택 해제(_N)"
+
+#: data/glade/liteamp-window.glade.h:13
+msgid "Volume _Down"
+msgstr "소리 작게(_D)"
+
+#: data/glade/liteamp-window.glade.h:14
+msgid "Volume _Up"
+msgstr "소리 크게(_D)"
+
+#: data/glade/liteamp-window.glade.h:15
+msgid "_Add Playlist"
+msgstr "연주목록 더하기(_A)"
+
+#: data/glade/liteamp-window.glade.h:16
+msgid "_Back"
+msgstr "조금 뒤로(_B)"
+
+#: data/glade/liteamp-window.glade.h:17
+msgid "_Compact"
+msgstr "작게 보기(_C)"
+
+#: data/glade/liteamp-window.glade.h:18
+msgid "_Effects"
+msgstr "효과(_E)"
+
+#: data/glade/liteamp-window.glade.h:19
+msgid "_Export"
+msgstr "내보내기(_E)"
+
+#: data/glade/liteamp-window.glade.h:20
+msgid "_Forward"
+msgstr "조금 앞으로(_F)"
+
+#: data/glade/liteamp-window.glade.h:21
+msgid "_Import"
+msgstr "들여오기(_I)"
+
+#: data/glade/liteamp-window.glade.h:22
+msgid "_Invert Selection"
+msgstr "선택 반대로(_I)"
+
+#: data/glade/liteamp-window.glade.h:23
+msgid "_Jump to"
+msgstr "찾아 가기(_J)"
+
+#: data/glade/liteamp-window.glade.h:24
+msgid "_Locate"
+msgstr "위치 열기(_L)..."
+
+#: data/glade/liteamp-window.glade.h:25
+msgid "_Mute"
+msgstr "소리 없음(_M)"
+
+#: data/glade/liteamp-window.glade.h:26
+msgid "_Next"
+msgstr "다음(_N)"
+
+#: data/glade/liteamp-window.glade.h:27
+msgid "_Play"
+msgstr "연주(_P)"
+
+#: data/glade/liteamp-window.glade.h:28
+msgid "_Playlist"
+msgstr "연주목록(_P)"
+
+#: data/glade/liteamp-window.glade.h:29
+msgid "_Previous"
+msgstr "이전(_P)"
+
+#: data/glade/liteamp-window.glade.h:30
+msgid "_Refresh"
+msgstr "새로 고침(_R)"
+
+#: data/glade/liteamp-window.glade.h:31
+msgid "_Remove Playlist"
+msgstr "연주목록 삭제(_R)"
+
+#: data/glade/liteamp-window.glade.h:32
+msgid "_Repeat"
+msgstr "반복(_R)"
+
+#: data/glade/liteamp-window.glade.h:33
+msgid "_Sidebar"
+msgstr "연주목록 선택기(_S)"
+
+#: data/glade/liteamp-window.glade.h:34
+msgid "_Start"
+msgstr "시작(_S)"
+
+#: data/glade/liteamp-window.glade.h:35
+msgid "_Visualizer"
+msgstr "시각효과(_V)"
+
+#: data/glade/location-dialog.glade.h:1 data/glade/playlist-dialog.glade.h:3
+msgid "<b>_Location(URI):</b>"
+msgstr "<b>위치(URI)(_L):</b>"
+
+#: data/glade/location-dialog.glade.h:2
+msgid "Add Location"
+msgstr "위치 더하기"
+
+#: data/glade/playlist-dialog.glade.h:1 data/glade/track-dialog.glade.h:1
+msgid "*"
+msgstr "★ "
+
+#: data/glade/playlist-dialog.glade.h:2
+msgid "<b>_Icon:</b>"
+msgstr "<b>아이콘(_I):</b>"
+
+#: data/glade/playlist-dialog.glade.h:4
+msgid "<b>_Name:</b>"
+msgstr "<b>이름(_N):</b>"
+
+#: data/glade/playlist-dialog.glade.h:5
+msgid "Playlist Properties"
+msgstr "연주목록 등록 정보"
+
+#: data/glade/playlist-dialog.glade.h:6
+msgid "Select Playlist File"
+msgstr "연주목록 파일 선택"
+
+#: data/glade/playlist-dialog.glade.h:7
+msgid "Select an icon for the Playlist"
+msgstr "연주목록 아이콘 선택"
+
+#: data/glade/prefs-dialog.glade.h:1
+msgid "<b>_Output Device:</b>"
+msgstr "<b>출력 장치(_O):</b>"
+
+#: data/glade/prefs-dialog.glade.h:2
+msgid "<b>_Playlist Columns:</b>"
+msgstr "<b>연주목록 표시(_P):</b>"
+
+#: data/glade/prefs-dialog.glade.h:3
+msgid "<b>_Tag Codesets:</b>"
+msgstr "<b>태그 코드셋(_T):</b>"
+
+#: data/glade/prefs-dialog.glade.h:4
+msgid "Preferences"
+msgstr "기본 설정"
+
+#: data/glade/prefs-dialog.glade.h:5
+msgid "Save _Geometry On Exit"
+msgstr "끝낼 때 창 위치 저장(_G)"
+
+#: data/glade/prefs-dialog.glade.h:6
+msgid "Select _Decoder By Contents"
+msgstr "내용으로 디코더 선택(_D)"
+
+#: data/glade/prefs-dialog.glade.h:7
+msgid "Use _Effects"
+msgstr "효과 사용(_E)"
+
+#: data/glade/prefs-dialog.glade.h:8
+msgid "Use _OSD"
+msgstr "OSD 사용(_O)"
+
+#: data/glade/prefs-dialog.glade.h:9
+msgid "Use _Software Volume"
+msgstr "소프트웨어 볼륨 사용(_S)"
+
+#: data/glade/prefs-dialog.glade.h:10
+msgid "_General"
+msgstr "일반(_G)"
+
+#: data/glade/prefs-dialog.glade.h:11
+msgid "_Input"
+msgstr "입력(_I)"
+
+#: data/glade/prefs-dialog.glade.h:12
+msgid "_Output"
+msgstr "출력(_O)"
+
+#: data/glade/track-dialog.glade.h:2
+msgid "<b>A_lbum:</b>"
+msgstr "<b>앨범(_L):</b>"
+
+#: data/glade/track-dialog.glade.h:3
+msgid "<b>File Date:</b>"
+msgstr "<b>파일 날짜:</b>"
+
+#: data/glade/track-dialog.glade.h:4
+msgid "<b>File Size:</b>"
+msgstr "<b>파일 크기:</b>"
+
+#: data/glade/track-dialog.glade.h:5
+msgid "<b>Location(URI):</b>"
+msgstr "<b>위치(URI):</b>"
+
+#: data/glade/track-dialog.glade.h:6
+msgid "<b>Play Time:</b>"
+msgstr "<b>연주 시간:</b>"
+
+#: data/glade/track-dialog.glade.h:7
+msgid "<b>Quality:</b>"
+msgstr "<b>음질:</b>"
+
+#: data/glade/track-dialog.glade.h:8
+msgid "<b>Trac_k:</b>"
+msgstr "<b>트랙(_K):</b>"
+
+#: data/glade/track-dialog.glade.h:9
+msgid "<b>_Artist:</b>"
+msgstr "<b>가수(_A):</b>"
+
+#: data/glade/track-dialog.glade.h:10
+msgid "<b>_Comment:</b>"
+msgstr "<b>설명(_C):</b>"
+
+#: data/glade/track-dialog.glade.h:11
+msgid "<b>_Genre:</b>"
+msgstr "<b>장르(_G):</b>"
+
+#: data/glade/track-dialog.glade.h:12
+msgid "<b>_Rating:</b>"
+msgstr "<b>선호도(_R):</b>"
+
+#: data/glade/track-dialog.glade.h:13
+msgid "<b>_Title:</b>"
+msgstr "<b>제목(_T):</b>"
+
+#: data/glade/track-dialog.glade.h:14
+msgid "<b>_Year:</b>"
+msgstr "<b>연도(_Y):</b>"
+
+#: data/glade/track-dialog.glade.h:15
+msgid "Track Properties"
+msgstr "트랙 등록 정보"
+
+#: data/glade/track-dialog.glade.h:16
+msgid "_Summary"
+msgstr "요약(_S)"
+
+#: data/glade/track-dialog.glade.h:17
+msgid "_Tag"
+msgstr "태그(_T)"

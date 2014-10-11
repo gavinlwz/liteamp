@@ -1,0 +1,65 @@
+liteamp (0.2.3.2-1) unstable; urgency=low
+
+  * hot fixes 
+    - added files now applied to play order (thanks mithrandiro and keizi)
+    - makes ogg tag parser to case-insensitive (thanks ganadist)
+    - fixes debian packaging(thanks ddt)
+    - prohibits long track title grows top level window
+
+ -- Dongsu Jang <iolo@hellocity.net>  Tue, 15 Jul 2003 04:54:10 +0900
+
+liteamp (0.2.3.1-1) unstable; urgency=low
+
+  * hot fixes
+    - makes ogg tag parser to case-insensitive (thanks ganadist)
+    - special character handling in filename (thanks ganadist)
+    - pthread_join fixes (thanks perky)
+
+ -- Dongsu Jang <iolo@hellocity.net>  Mon, 14 Jul 2003 12:17:33 +0900
+
+liteamp (0.2.3-1) unstable; urgency=low
+
+  * backports tag parser from devel tree.
+    - use libid3tag
+    - "tag_codesets" added to prefs to provide fallback tag codesets
+  * remove useless "All" playlist
+    - it'll be back in the next major version with useful features.
+
+ -- Dongsu Jang <iolo@hellocity.net>  Mon, 14 Jul 2003 05:55:25 +0900
+
+liteamp (0.2.2-1) unstable; urgency=low
+
+  * minor update:
+    - add move forward/backward 5 sec.
+    - add software volume
+  * bug fixes:
+    - remove dependency for gtk2.2(workaround for gtk_list_store_swap)
+    - fixes on unknown tag encoding(workaround for g_markup_escape_text)
+
+ -- Dongsu Jang <iolo@hellocity.net>  Wed, 16 Apr 2003 22:50:40 +0900
+
+liteamp (0.2.1-1) unstable; urgency=low
+
+  *  hot fixes on decoder thread.
+
+ -- Dongsu Jang <iolo@hellocity.net>  Mon, 17 Feb 2003 15:21:34 +0900
+
+liteamp (0.2-1) unstable; urgency=low
+
+  * minor update:
+    - add effect/equalizer.
+    - add sidebar drag & drop support .
+    - add preferences dialog with more configurable options.
+  * bug fixes:
+    - shuffle, loop and auto next works correctly.
+    - more error-checking on tag parsing.
+    - less UI lockdown(we need medic :)
+
+ -- Dongsu Jang <iolo@hellocity.net>  Fri, 14 Feb 2003 18:30:45 +0900
+
+liteamp (0.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Baekryun Je <ddt@mirstyle.org>  Wed, 29 Jan 2003 05:36:21 +0900
+

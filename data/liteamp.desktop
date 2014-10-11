@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=liteamp
+Comment=A Light-weight Music Player for Gnome
+Comment[ko]=그놈을 위한 작고 가벼운 음악 연주기
+Exec=liteamp
+Icon=liteamp.png
+Terminal=false
+Type=Application
+Categories=Application;AudioVideo;
+StartupNotify=true

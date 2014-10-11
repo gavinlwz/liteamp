@@ -1,0 +1,97 @@
+AC_INIT(liteamp, 0.3.1, iolo@hellocity.net)
+AM_CONFIG_HEADER(config.h)
+AC_CONFIG_SRCDIR(src/main.c)
+AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
+
+dnl "libtoolize" complains this :(
+dnl AC_CONFIG_AUX_DIR(.)
+
+AM_MAINTAINER_MODE
+AC_PROG_CC
+AC_PROG_INSTALL
+AM_PROG_LIBTOOL
+AC_PROG_INTLTOOL
+
+dnl
+dnl libegg use "glib-genmarshal"
+dnl
+dnl AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
+
+GNOME_DEBUG_CHECK
+GNOME_COMPILE_WARNINGS(error)
+
+dnl
+dnl libmad
+dnl
+AC_CHECK_LIB(mad, mad_decoder_finish, MAD_LIBS="-lmad", AC_MSG_ERROR([
+	*** No mad library found. $PACKAGE need mad library
+	*** See http://www.underbit.com/products/mad/ ])
+)
+AC_SUBST(MAD_LIBS)
+
+dnl
+dnl libid3tag
+dnl
+AC_CHECK_LIB(id3tag, id3_file_update, ID3TAG_LIBS="-lid3tag", AC_MSG_ERROR([
+	*** No id3tag library found. $PACKAGE need id3tag library
+	*** See http://www.underbit.com/products/mad/ ]),
+	-lz
+)
+AC_SUBST(ID3TAG_LIBS)
+
+dnl
+dnl libvorbis, libvorbisfile
+dnl use "aclocal.m4" to workaround for "vorbis.m4" bugs
+dnl
+LITEAMP_PATH_VORBIS(VORBIS_LIBS="-lvorbis -lvorbisfile")
+AC_SUBST(VORBIS_LIBS)
+
+dnl
+dnl libao
+dnl
+XIPH_PATH_AO(AO_LIBS="-lao")
+AC_SUBST(AO_LIBS)
+
+dnl
+dnl gtk+/gnome
+dnl
+GTK_REQUIRED=2.4.0
+LIBGLADE_REQUIRED=2.4.0
+GNOMEVFS_REQUIRED=2.6.0
+LIBGNOME_REQUIRED=2.6.0
+LIBGNOMEUI_REQUIRED=2.6.0
+PKG_CHECK_MODULES(LITEAMP,
+	gtk+-2.0 >= $GTK_REQUIRED
+	libglade-2.0 >= $LIBGLADE_REQUIRED
+	gnome-vfs-2.0 >= $GNOMEVFS_REQUIRED
+	libgnome-2.0 >= $LIBGNOME_REQUIRED
+	libgnomeui-2.0 >= $LIBGNOMEUI_REQUIRED
+)
+AC_SUBST(LITEAMP_CFLAGS)
+AC_SUBST(LITEAMP_LIBS)
+
+dnl
+dnl gettext
+dnl
+ALL_LINGUAS="ko"
+GETTEXT_PACKAGE=liteamp
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE",
+	[Package Name for GetText])
+AM_GLIB_GNU_GETTEXT
+
+
+AC_OUTPUT([
+	Makefile
+	src/Makefile
+	src/effect/Makefile
+	data/Makefile
+	data/pixmaps/Makefile
+	data/glade/Makefile
+	data/ui/Makefile
+	po/Makefile.in
+	doc/Makefile
+	debian/Makefile
+	liteamp.spec
+])
+

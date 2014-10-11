@@ -1,0 +1,97 @@
+<ui>
+    <menubar name="MainMenu">
+	<menu action="FileMenu">
+	    <menuitem action="AddPlaylist"/>
+	    <menuitem action="RemovePlaylist"/>
+	    <separator/>
+	    <menuitem action="AddPlaylist"/>
+	    <menuitem action="AddDirectory"/>
+	    <menuitem action="AddLocation"/>
+	    <separator/>
+	    <menuitem action="Import"/>
+	    <menuitem action="Export"/>
+	    <separator/>
+	    <menuitem action="Quit"/>
+	</menu>
+	<menu action="EditMenu">
+	    <menuitem action="Cut"/>
+	    <menuitem action="Copy"/>
+	    <menuitem action="Paste"/>
+	    <menuitem action="Clear"/>
+	    <separator/>
+	    <menuitem action="SelectAll"/>
+	    <menuitem action="SelectNone"/>
+	    <menuitem action="InvertSelection"/>
+	    <separator/>
+	    <menuitem action="Properties"/>
+	    <separator/>
+	    <menuitem action="Preferences"/>
+	    <menuitem action="ConfigureEffects"/>
+	</menu>
+	<menu action="PlayMenu">
+	    <menuitem action="Previous"/>
+	    <menuitem action="Start"/>
+	    <menuitem action="Pause"/>
+	    <menuitem action="Stop"/>
+	    <menuitem action="Next"/>
+	    <separator/>
+	    <menuitem action="Back"/>
+	    <menuitem action="Forward"/>
+	    <separator/>
+	    <menuitem action="Mute"/>
+	    <menuitem action="VolumeDown"/>
+	    <menuitem action="VolumeUp"/>
+	    <separator/>
+	    <menuitem action="Shuffle"/>
+	    <menuitem action="Repeat"/>
+	    <menuitem action="Effects"/>
+	</menu>
+	<menu action="ViewMenu">
+	    <menuitem action="Compact"/>
+	    <separator/>
+	    <menuitem action="Visualizer"/>
+	    <menuitem action="Sidebar"/>
+	    <menuitem action="Playlist"/>
+	    <menuitem action="Statusbar"/>
+	    <separator/>
+	    <menuitem action="JumpTo"/>
+	    <menuitem action="Locate"/>
+	    <separator/>
+	    <menuitem action="Refresh"/>
+	</menu>
+	<menu action="HelpMenu">
+	    <menuitem action="About"/>
+	</menu>
+    </menubar>
+    <popup action="SidebarPopup">
+	<menuitem action="Properties"/>
+	<separator/>
+	<menuitem action="AddPlaylist"/>
+	<menuitem action="RemovePlaylist"/>
+	<separator/>
+	<menuitem action="Sidebar"/>
+    </popup>
+    <popup action="PlaylistPopup">
+	<menuitem action="Properties"/>
+	<separator/>
+	<menuitem action="AddPlaylist"/>
+	<menuitem action="AddDirectory"/>
+	<menuitem action="AddLocation"/>
+	<separator/>
+	<menuitem action="Cut"/>
+	<menuitem action="Copy"/>
+	<menuitem action="Paste"/>
+	<menuitem action="Clear"/>
+	<separator/>
+	<menuitem action="Playlist"/>
+    </popup>
+    <popup action="TrayPopup">
+	<menuitem action="Previous"/>
+	<menuitem action="Start"/>
+	<menuitem action="Pause"/>
+	<menuitem action="Stop"/>
+	<menuitem action="Next"/>
+	<separator/>
+	<menuitem action="Quit"/>
+    </popup>
+</ui>

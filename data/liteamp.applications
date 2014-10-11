@@ -1,0 +1,7 @@
+liteamp
+        command=liteamp
+        name=A Light-Weight Music Player for GNOME
+        can_open_multiple_files=true
+        expects_uris=false
+        requires_terminal=false
+        mime_types=x-directory/normal,application/x-ogg,audio/x-mp3

@@ -1,0 +1,2 @@
+?package(liteamp):needs=X11 section=Apps/Sound \
+  title="liteamp" command="/usr/bin/liteamp"

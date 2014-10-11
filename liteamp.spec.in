@@ -1,0 +1,63 @@
+Summary: A light-weight music player for GNOME
+Summary(ko): 그놈을 위한 작고 가벼운 음악 연주기
+Name: @PACKAGE@
+Version: @VERSION@
+Release: 1
+URL: http://kldp.net/projects/liteamp/
+Source: %{name}-%{version}.tar.gz
+License: GPL
+Group: Applications/Multimedia
+Packager: Dongsu Jang <iolo@hellocity.net>
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+BuildRequires: gtk2-devel >= 2.4
+BuildRequires: gnome-vfs2-devel >= 2.0
+BuildRequires: libogg-devel >= 1.0
+BuildRequires: libvorbis-devel >= 1.0
+BuildRequires: libao-devel >= 0.8
+BuildRequires: libmad-devel >= 0.14
+
+Requires: gtk2 >= 2.4
+Requires: gnome-vfs2 >= 2.0
+Requires: libogg >= 1.0
+Requires: libvorbis >= 1.0
+Requires: libao >= 0.8
+Requires: libmad >= 0.14
+
+%description
+A light-weight music player for GNOME.
+
+%description -l ko
+그놈을 위한 작고 가벼운 음악 연주기.
+
+%prep
+%setup -q
+
+%build
+%configure
+make
+
+%install
+rm -rf $RPM_BUILD_ROOT
+%makeinstall
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(-,root,root)
+%{_bindir}/*
+%{_datadir}/applications/@PACKAGE@.desktop
+%{_datadir}/application-registry/@PACKAGE@.applications
+%{_datadir}/pixmaps/@PACKAGE@.png
+%{_datadir}/@PACKAGE@/pixmaps/*.png
+%{_datadir}/@PACKAGE@/glade/*.glade
+%{_datadir}/locale/*/LC_MESSAGES/@PACKAGE@.mo
+%{_mandir}/man1/@PACKAGE@.1.gz
+%doc AUTHORS ChangeLog COPYING INSTALL NEWS README
+
+%changelog
+* Sat Feb 15 2003 Sangu <iamboy93@hotmail.com>
+- Second rpm spec.
+
+* Tue Jan 28 2003 Dongsu Jang <potato@hellocity.net>
+- Initial rpm spec.
